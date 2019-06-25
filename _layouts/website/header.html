@@ -31,9 +31,9 @@ if(location.href.indexOf("/en")!=-1){
 function changeLang(){
     var v = document.querySelector("[name='language']").value;
     if(v=='EN'){
-        location.href.repalce(location.href.replace("/zh","/en"));
+        location.href = location.href.replace("/zh","/en");
     }else{
-        location.href.repalce(location.href.replace("/en","/zh"));
+        location.href =location.href.replace("/en","/zh");
     }
 }
 </script>
