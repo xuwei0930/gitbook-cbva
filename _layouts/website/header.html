@@ -15,6 +15,15 @@
     </h1>
 </div>
 {% endblock %}
+<style>
+    #language{
+        border: 1px solid #dbdbdb;
+        width:80px;
+         height: 30px;
+         border-radius: 3px;
+         margin: 10px 20px;
+    }
+</style>
 <script>
 if(location.href.indexOf("/en")!=-1){
     document.querySelector("#language").value="EN"
@@ -22,9 +31,9 @@ if(location.href.indexOf("/en")!=-1){
 function changeLang(){
     var v = document.querySelector("[name='language']").value;
     if(v=='EN'){
-        location.repalce(location.href.replace("/zh","/en"));
+        location.href.repalce(location.href.replace("/zh","/en"));
     }else{
-        location.repalce(location.href.replace("/en","/zh"));
+        location.href.repalce(location.href.replace("/en","/zh"));
     }
 }
 </script>
