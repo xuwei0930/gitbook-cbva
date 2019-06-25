@@ -32,9 +32,11 @@
         {% block book_sidebar %}
             {% block search_input %}{% endblock %}
             {% block book_summary %}
+                {% include "website/summary_top.html" %}
                 <nav role="navigation">
                 {% include "website/summary.html" %}
                 </nav>
+                {% include "website/summary_bottom.html" %}
             {% endblock %}
         {% endblock %}
     </div>
@@ -50,7 +52,9 @@
                             {% block search_results %}
                                 <section class="normal markdown-section">
                                 {% block page %}
+                                {% include "website/page_top.html" %}
                                 {{ page.content|safe }}
+                                {% include "website/page_bottom.html" %}
                                 {% endblock %}
                                 </section>
                             {% endblock %}
