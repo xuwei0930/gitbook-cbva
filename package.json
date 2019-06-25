@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xuwei0930/gitbook-cbva.git"
+    "url": "https://github.com/xuwei0930/theme-cbva.git"
   },
   "author": "xuwei. <xuwei0930@foxmail.com.com> fork from samy@gitbook.com's theme-default",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/xuwei0930/gitbook-cbva/issues"
+    "url": "https://github.com/xuwei0930/theme-cbva/issues"
   },
   "contributors": [
     {
