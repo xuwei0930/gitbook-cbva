@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-cbva",
+  "name": "gitbook-plugin-theme-cbva",
   "description": "Default theme for GitBook",
   "main": "./index.js",
   "version": "1.0.7",
@@ -27,13 +27,15 @@
     "type": "git",
     "url": "https://github.com/xuwei0930/gitbook-cbva.git"
   },
-  "author": "FriendCode Inc. <contact@gitbook.com>",
+  "author": "lijiaocn. <lijiaocn@foxmail.com.com> fork from samy@gitbook.com's theme-default",
   "license": "Apache-2.0",
-
+  "bugs": {
+    "url": "https://github.com/lijiaocn/theme-default/issues"
+  },
   "contributors": [
     {
-      "name": "xuwei",
-      "email": "xuwei0930@gmail.com"
+      "name": "Samy Pessé",
+      "email": "samy@gitbook.com"
     }
   ],
   "gitbook": {
