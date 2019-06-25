@@ -1,19 +1,30 @@
 {% block book_header %}
 <div class="book-header" role="navigation">
+        <div class="pull-right">
+                <select id="language" name="language" onchange="changeLang()">
+                    <option value="CN">中文</option>
+                    <option value="EN">EN</option>
+                </select>
+            </div>
     {% if glossary.path %}
     <a href="{{ ('/' + glossary.path)|resolveFile }}" class="btn pull-left" aria-label="{{ "GLOSSARY_OPEN"|t }}"><i class="fa fa-sort-alpha-asc"></i></a>
     {% endif %}
-
-    <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
         <a href="{{ "/"|resolveFile }}" >{{ page.title }}</a>
     </h1>
-    <div class="pull-right">
-        <select name="" id="">
-            <option value="CN">中文</option>
-            <option value="EN">EN</option>
-        </select>
-    </div>
 </div>
 {% endblock %}
+<script>
+if(location.href.indexOf("/en")!=-1){
+    document.querySelector("#language").value="EN"
+}
+function changeLang(){
+    var v = document.querySelector("[name='language']").value;
+    if(v=='EN'){
+        location.repalce(location.href.replace("/zh","/en"));
+    }else{
+        location.repalce(location.href.replace("/en","/zh"));
+    }
+}
+</script>
